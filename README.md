@@ -32,7 +32,9 @@ cd ../medicine-inventory-frontend
 npm install
 
 
-▶️ Start the Applications
+▶️ Start the Applications:
+
+
 Backend:
 npm start
 
