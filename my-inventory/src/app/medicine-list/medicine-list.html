@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Medicine Inventory</h2>
+
+  <form (ngSubmit)="addMedicine()">
+    <input
+      type="text"
+      [(ngModel)]="newMedicine.name"
+      name="name"
+      placeholder="Medicine Name"
+      required
+    />
+    <input
+      type="number"
+      [(ngModel)]="newMedicine.quantity"
+      name="quantity"
+      placeholder="Quantity"
+      required
+    />
+    <input
+      type="date"
+      [(ngModel)]="newMedicine.expiryDate"
+      name="expiryDate"
+      required
+    />
+    <button type="submit">Add Medicine</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let medicine of medicines">
+      {{ medicine.name }} – {{ medicine.quantity }} – Expires on {{ medicine.expiryDate }}
+      <button (click)="deleteMedicine(medicine._id!)">Delete</button>
+    </li>
+  </ul>
+</div>

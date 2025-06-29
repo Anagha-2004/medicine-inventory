@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('https://i.pinimg.com/736x/1f/7f/c5/1f7fc58b5300618f55c06e43c9180af4.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
