@@ -35,6 +35,8 @@ npm install
 ▶️ Start the Applications
 Backend:
 npm start
+
+
 Frontend:
 ng serve
 
